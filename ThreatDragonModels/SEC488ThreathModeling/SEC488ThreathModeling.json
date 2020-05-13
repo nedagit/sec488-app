@@ -88,16 +88,26 @@
               "angle": 0,
               "id": "9ba1e597-4082-4497-b583-cf78aac76e1e",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Sensitive file access",
+                  "type": "Information disclosure",
+                  "description": "Authenticated user",
+                  "mitigation": "Enforce per-user"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "File System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
